@@ -1,0 +1,19 @@
+package com.sakout.tenderflow.enums;
+
+public enum Role {
+    BUYER,
+    BIDDER,
+    ADMIN,
+    REVIEWER,
+    AUDITOR,
+    SUPPLIER,
+    LEGAL_ADVISOR,
+    FINANCE_OFFICER,
+    TECHNICAL_EXPERT,
+    PROJECT_MANAGER,
+    CONTRACT_MANAGER,
+    EVALUATOR,
+    COMPLIANCE_OFFICER,
+    PROCUREMENT_OFFICER,
+
+}

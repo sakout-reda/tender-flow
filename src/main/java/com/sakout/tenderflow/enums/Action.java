@@ -1,0 +1,24 @@
+package com.sakout.tenderflow.enums;
+
+public enum Action {
+    ADD_USER,
+    USER_LOGIN,
+    CREATE_TENDER,
+    UPDATE_TENDER,
+    INVITE_BIDDERS,
+    SUBMIT_BID,
+    UPDATE_BID,
+    WITHDRAW_BID,
+    EVALUATE_BIDS,
+    NOTIFY_BIDDERS,
+    VIEW_TENDER,
+    VIEW_BID,
+    VIEW_USER,
+    EDIT_USER,
+    VIEW_NOTIFICATION,
+    SEARCH_TENDERS,
+    EXPORT_DATA,
+    GENERATE_REPORTS,
+    VIEW_ANALYTICS,
+    MANAGE_SETTINGS
+}
