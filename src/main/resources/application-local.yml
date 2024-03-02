@@ -1,0 +1,52 @@
+server:
+  port: 8085
+spring:
+  flyway:
+    enabled: false
+  application:
+    name: tender-flow
+  cloud:
+    kubernetes:
+      enabled: false
+      discovery:
+        enabled: false
+#keycloak:
+#  realm: realm_ce
+#  auth-server-url: http://localhost:8080/auth
+#  bearer-only: true
+#  ssl-required: none
+#  resource: portail-rpa
+#  use-resource-role-mappings: false
+#  disable-trust-manager: true
+tender-flow:
+  camunda:
+    bpm:
+      admin-user:
+        id: camunda
+        password: camunda
+  name: "@project.artifactId@"
+  description: "@project.description@"
+  build:
+    version: "@project.version@"
+    timestamp: "@timestamp@"
+  datasource:
+    jdbcUrl: jdbc:postgresql://localhost:5432/tender-flow
+    username: postgres
+    password: postgres
+    platform: POSTGRESQL
+    driverClassName: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: true
+        format_sql: true
+#  seed:
+#    tender:
+#      #      every minute
+#      cron: '* * * * * *'
+#      enabled: false
+#      fileLocation: /RPA
